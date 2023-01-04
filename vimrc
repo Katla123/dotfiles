@@ -1,6 +1,7 @@
 " Disable compatability with vi which ca cause unexpected issues.
 set nocompatible
 
+
 filetype on
 filetype plugin on
 filetype indent on
@@ -84,6 +85,28 @@ nnoremap <leader>h :split<CR>
 nnoremap <leader>v :vsplit<CR>
 nnoremap <leader>ö :set rnu!<CR>
 nnoremap <leader>ä :IndentGuidesToggle<CR>
+
+"automatically add brackets and quotes
+inoremap ( ()<Esc>ha
+inoremap { {<CR>}<Esc>ko
+inoremap < <><Esc>ha
+inoremap [ []<Esc>hl
+inoremap " ""<Esc>ha
+inoremap ' ''<Esc>ha
+
+"Enclosing stuff in brackets and quotes in Visual mode
+vnoremap { di{}<Esc>hp 
+vnoremap ( di()<Esc>hp 
+vnoremap < di<><Esc>hp 
+vnoremap [ di[]<Esc>hp 
+vnoremap " di""<Esc>hp 
+vnoremap ' di''<Esc>hp 
+
+" Commenting stuff
+" visual mode for multiline
+" insert mode and normal mode for single line
+inoremap <leader>c <Esc>ma0i//<Esc>`a :delmarks a<CR>
+inoremap <leader>c ma0i//<Esc>`a :delmarks a<CR>
 " }}}
 " VIMSCRIPT --------------------------------------------------------- {{{
 "
