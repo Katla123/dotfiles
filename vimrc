@@ -49,6 +49,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'
     Plug 'ervandew/supertab'
     Plug 'nathanaelkane/vim-indent-guides'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 "
 
