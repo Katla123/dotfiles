@@ -1,0 +1,48 @@
+Nice to have in bashrc
+--------------------
+if ! tmux has-session 2>/dev/null
+    tmux
+fi
+
+alias gid="git add -A"
+alias gic="git commit"
+alias gicn="git commit --amend --no-edit"
+
+function gush {
+    if [[ -z $1 ]]; then
+        echo "pushing to master"
+        git push origin HEAD:refs/for/master
+    else
+        echo "pushing to branch $1"
+        git push origin HEAD:refs/for/$1
+    fi
+}
+
+function ikwid {
+    echo "You know what you are doing B)"
+    gid
+    gicn
+    if [[ -z $1 ]]; then
+        gush
+    else
+        gush $1
+    fi
+}
+--------------------
+
+Nice to have for Linux Development
+--------------------
+zsh - Just a nice shell
+USE IT
+robbyrussell theme :)
+
+tree
+tmux
+rg
+tree
+gcc - to compile cpp
+cmake - learn to love it
+gdb - to debug cpp
+kickstart.nvim - just use it, makes everything so smooth
+luarocks - needed for neovim
+
