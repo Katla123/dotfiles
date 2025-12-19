@@ -180,7 +180,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
-    config = { "\27LJ\2\n®\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\15float_opts\1\0\2\14title_pos\vcenter\vborder\vcurved\1\0\4\tsize\3\n\17open_mapping\t<F7>\14direction\nfloat\19shading_factor\3\2\nsetup\15toggleterm\frequire\0" },
+    config = { "\27LJ\2\n®\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\15float_opts\1\0\2\vborder\vcurved\14title_pos\vcenter\1\0\4\tsize\3\n\19shading_factor\3\2\14direction\nfloat\17open_mapping\t<F7>\nsetup\15toggleterm\frequire\0" },
     loaded = true,
     path = "/home/makerst4/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
@@ -208,10 +208,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: toggleterm.nvim
-time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\n®\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\15float_opts\1\0\2\14title_pos\vcenter\vborder\vcurved\1\0\4\tsize\3\n\17open_mapping\t<F7>\14direction\nfloat\19shading_factor\3\2\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
-time([[Config for toggleterm.nvim]], false)
 -- Config for: nvim-ts-autotag
 time([[Config for nvim-ts-autotag]], true)
 try_loadstring("\27LJ\2\n¾\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\17per_filetype\thtml\1\0\0\1\0\1\17enable_close\1\topts\1\0\0\1\0\3\26enable_close_on_slash\1\18enable_rename\2\17enable_close\2\nsetup\20nvim-ts-autotag\frequire\0", "config", "nvim-ts-autotag")
@@ -220,6 +216,10 @@ time([[Config for nvim-ts-autotag]], false)
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+try_loadstring("\27LJ\2\n®\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\15float_opts\1\0\2\vborder\vcurved\14title_pos\vcenter\1\0\4\tsize\3\n\19shading_factor\3\2\14direction\nfloat\17open_mapping\t<F7>\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+time([[Config for toggleterm.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads

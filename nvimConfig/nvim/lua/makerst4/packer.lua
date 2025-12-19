@@ -39,10 +39,10 @@ return require('packer').startup(function(use)
  -- 		"williamboman/mason-lspconfig.nvim",
  -- 		tag = "v1.32.0"
  -- 	}
- -- 	use {
- -- 		"neovim/nvim-lspconfig",
- -- 		tag = "v2.5.0"
- -- 	}
+  	use {
+  		"neovim/nvim-lspconfig",
+  		tag = "v2.5.0"
+  	}
  -- 	use { "hrsh7th/nvim-cmp" }
  -- 	use { "hrsh7th/cmp-nvim-lsp" }
  -- 	use { "hrsh7th/cmp-buffer" }
